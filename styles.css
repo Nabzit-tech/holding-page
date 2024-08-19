@@ -1,6 +1,6 @@
 /* styles.css */
 
-/* Maintain original styling */
+/* Restore original styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -9,7 +9,7 @@ body {
 
 header {
     padding: 10px;
-    background-color: #f8f8f8; /* Use your existing color scheme */
+    background-color: #333399; /* Restore the original blue color */
     text-align: center; /* Center elements */
 }
 
@@ -33,7 +33,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333; /* Original text color */
+    color: white; /* Original text color */
 }
 
 /* Intro section styling */
@@ -46,8 +46,8 @@ nav ul li a {
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #f8f8f8; /* Use the original footer color */
-    color: #333; /* Original text color */
+    background-color: #333399; /* Restore the original blue color */
+    color: white; /* Original text color */
 }
 
 /* Responsive adjustments */
