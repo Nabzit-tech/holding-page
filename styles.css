@@ -1,5 +1,6 @@
 /* styles.css */
 
+/* Maintain original styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,11 +8,9 @@ body {
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 10px;
-    background-color: #333;
+    background-color: #f8f8f8; /* Use your existing color scheme */
+    text-align: center; /* Center elements */
 }
 
 header img.logo {
@@ -19,54 +18,46 @@ header img.logo {
     height: auto;
 }
 
+/* Navigation styling */
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex;
-    gap: 15px;
+    display: inline-block; /* Keep the menu inline */
 }
 
 nav ul li {
-    margin: 0;
+    display: inline;
+    margin-right: 15px;
 }
 
 nav ul li a {
-    color: white;
     text-decoration: none;
-    padding: 8px 15px;
-    background-color: #555;
-    border-radius: 4px;
+    color: #333; /* Original text color */
 }
 
-nav ul li a:hover {
-    background-color: #777;
-}
-
+/* Intro section styling */
 .intro {
     padding: 20px;
     text-align: center;
 }
 
+/* Footer styling */
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #333;
-    color: white;
+    background-color: #f8f8f8; /* Use the original footer color */
+    color: #333; /* Original text color */
 }
 
+/* Responsive adjustments */
 @media (max-width: 600px) {
     header img.logo {
-        max-width: 80%;
+        max-width: 80%; /* Adjust this value to control the size on smaller screens */
     }
 
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    nav ul li a {
+    nav ul li {
         display: block;
-        text-align: center;
+        margin-bottom: 10px;
     }
 }
