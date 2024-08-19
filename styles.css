@@ -1,16 +1,18 @@
 /* styles.css */
 
-/* Restore original styling */
+/* Maintain original styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f0f4f8; /* Background color used on the About page */
+    color: #333; /* Text color */
 }
 
 header {
     padding: 10px;
-    background-color: #333399; /* Restore the original blue color */
-    text-align: center; /* Center elements */
+    background-color: #0a4275; /* Unified blue color for all pages */
+    text-align: center;
 }
 
 header img.logo {
@@ -23,7 +25,7 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: inline-block; /* Keep the menu inline */
+    display: inline-block;
 }
 
 nav ul li {
@@ -33,7 +35,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: white; /* Original text color */
+    color: white; /* Consistent text color for navigation links */
 }
 
 /* Intro section styling */
@@ -46,14 +48,14 @@ nav ul li a {
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #333399; /* Restore the original blue color */
-    color: white; /* Original text color */
+    background-color: #0a4275; /* Unified blue color for all pages */
+    color: white; /* Consistent text color for footer */
 }
 
 /* Responsive adjustments */
 @media (max-width: 600px) {
     header img.logo {
-        max-width: 80%; /* Adjust this value to control the size on smaller screens */
+        max-width: 80%;
     }
 
     nav ul li {
