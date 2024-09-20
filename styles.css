@@ -1,3 +1,64 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+header {
+    padding: 10px;
+    background-color: #333399; /* Blue color */
+    text-align: center;
+}
+
+header img.logo {
+    max-width: 100%;
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+/* Intro section styling */
+.intro {
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #333399;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333399;
+    color: white;
+}
+
 /* Contact Form Styling */
 .contact-form {
     max-width: 600px;
@@ -15,7 +76,7 @@
     font-weight: bold;
 }
 
-.contact-form input, 
+.contact-form input,
 .contact-form textarea {
     padding: 10px;
     margin-bottom: 15px;
@@ -37,4 +98,28 @@
 
 .contact-form button:hover {
     background-color: #2a2b8c;
+}
+
+/* About page image styling */
+.founder-image {
+    max-width: 200px; /* Reducing the size */
+    height: auto; /* Keeping aspect ratio */
+    display: block;
+    margin: 20px auto; /* Center the image */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    header img.logo {
+        max-width: 80%; /* Adjust logo size for smaller screens */
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .contact-form {
+        padding: 10px;
+    }
 }
