@@ -7,14 +7,15 @@ body {
     color: #333;
 }
 
+/* Header */
 header {
+    background-color: #0a4275;
     padding: 10px;
-    background-color: #333399; /* Blue color */
     text-align: center;
 }
 
-header img.logo {
-    max-width: 100%;
+header .logo {
+    max-width: 150px;
     height: auto;
 }
 
@@ -27,99 +28,106 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin-right: 15px;
+    margin-right: 20px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: white;
-    font-size: 18px;
+    font-size: 1.2em;
 }
 
-/* Intro section styling */
-.intro {
+/* Main content */
+main {
     padding: 20px;
-    text-align: center;
 }
 
-h1 {
-    color: #333399;
-}
-
-p {
-    font-size: 18px;
-    line-height: 1.6;
-}
-
-/* Footer styling */
+/* Footer */
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #333399;
+    background-color: #0a4275;
     color: white;
 }
 
-/* Contact Form Styling */
+/* Contact page form */
 .contact-form {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.contact-form form {
-    display: flex;
-    flex-direction: column;
-}
-
-.contact-form label {
-    margin: 10px 0 5px;
-    font-weight: bold;
-}
-
-.contact-form input,
+.contact-form input[type="text"], 
+.contact-form input[type="email"], 
 .contact-form textarea {
+    width: calc(100% - 20px);
     padding: 10px;
-    margin-bottom: 15px;
-    font-size: 16px;
-    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 100px;
 }
 
 .contact-form button {
-    padding: 10px 20px;
-    font-size: 18px;
-    background-color: #333399;
+    background-color: #0a4275;
     color: white;
+    padding: 10px 20px;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
-    border-radius: 4px;
 }
 
 .contact-form button:hover {
-    background-color: #2a2b8c;
+    background-color: #094069;
 }
 
-/* About page image styling */
+/* About page */
+.about-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 .founder-image {
-    max-width: 200px; /* Reducing the size */
-    height: auto; /* Keeping aspect ratio */
-    display: block;
-    margin: 20px auto; /* Center the image */
+    max-width: 150px;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+    border-radius: 10px;
 }
 
-/* Responsive adjustments */
-@media (max-width: 600px) {
-    header img.logo {
-        max-width: 80%; /* Adjust logo size for smaller screens */
-    }
+.about-text {
+    line-height: 1.6;
+    font-size: 1.1em;
+    margin-left: 170px;
+}
 
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
     nav ul li {
         display: block;
         margin-bottom: 10px;
     }
 
+    .founder-image {
+        float: none;
+        margin: 0 auto 20px auto;
+        display: block;
+    }
+
+    .about-text {
+        margin-left: 0;
+    }
+
     .contact-form {
+        width: 100%;
         padding: 10px;
     }
 }
