@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <img src="images/nabzit-logo.png" alt="Nabzit Logo" class="logo">
+        <img src="images/nabzit-full-logo.png" alt="Nabzit Full Logo" class="logo">
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -20,21 +20,19 @@
     </header>
 
     <main>
-        <section class="contact">
-            <h1>Contact Us</h1>
-            <form action="submit_form.php" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
+        <h2>Contact Us</h2>
+        <form class="contact-form" action="submit-form.html" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your name">
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your email">
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Your message"></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
     </main>
 
     <footer>
